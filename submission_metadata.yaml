@@ -15,7 +15,7 @@ team_members:
 
 # ----------------------------------------------------------------------------
 github_repo: "https://github.com/builtbysiddh/redrob"
-sandbox_link: "https://huggingface.co/spaces/<FILL_USERNAME>/redrob-ranker"  # see note below
+sandbox_link: "https://redrob-siddh.streamlit.app"
 reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
 
 # ----------------------------------------------------------------------------

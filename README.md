@@ -4,6 +4,8 @@ Ranks the top 100 candidates from a 100K pool against the **Senior AI Engineer
 (Founding Team)** job description, best-fit first, with grounded per-candidate
 reasoning.
 
+**▶ Live demo:** https://redrob-siddh.streamlit.app
+
 ## Reproduce
 
 ```bash
@@ -20,6 +22,8 @@ python validate_submission.py submission.csv   # -> "Submission is valid."
 ```
 
 ## Live sandbox / demo
+
+**Live app → https://redrob-siddh.streamlit.app**
 
 An interactive dashboard runs the **same ranker** on a small sample and makes
 every decision visible: the six-signal decomposition per candidate (radar), the
