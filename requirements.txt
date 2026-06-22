@@ -1,0 +1,7 @@
+# core ranker
+scikit-learn==1.4.2
+numpy==1.26.4
+
+# demo dashboard only
+streamlit>=1.40
+plotly>=5.22

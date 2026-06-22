@@ -1,0 +1,60 @@
+{
+  "pool_size": 100000,
+  "pool_nontech_pct": 68.8,
+  "pool_honeypot_flagged": 9270,
+  "top100": {
+    "honeypots": 0,
+    "india_pct": 93,
+    "median_years": 6.7,
+    "score_min": 0.676,
+    "score_max": 0.966,
+    "distinct_titles": 19,
+    "top_titles": [
+      [
+        "AI Research Engineer",
+        12
+      ],
+      [
+        "Recommendation Systems Engineer",
+        9
+      ],
+      [
+        "Applied ML Engineer",
+        8
+      ],
+      [
+        "ML Engineer",
+        8
+      ],
+      [
+        "Search Engineer",
+        7
+      ],
+      [
+        "AI Engineer",
+        7
+      ],
+      [
+        "Junior ML Engineer",
+        7
+      ],
+      [
+        "Machine Learning Engineer",
+        6
+      ],
+      [
+        "AI Specialist",
+        6
+      ],
+      [
+        "NLP Engineer",
+        5
+      ]
+    ]
+  },
+  "naive_baseline": {
+    "traps_in_top100": 96,
+    "honeypots_in_top100": 10
+  },
+  "runtime_note": "Ranked all 100,000 profiles on CPU (no GPU, no network) in ~2 min."
+}

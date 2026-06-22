@@ -1,0 +1,31 @@
+# ── Contest data — never commit (large + the organizer's full pool) ───────────
+candidates.jsonl
+candidates.jsonl.gz
+challenge_data/
+*.zip
+"[PUB]"*
+
+# ── Local scratch / backups ──────────────────────────────────────────────────
+*.bak
+submission_verify*.csv
+_docx_dump.txt
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# ── Tooling ──────────────────────────────────────────────────────────────────
+.claude/
+.streamlit/secrets.toml
+.DS_Store
+
+# ── Internal / not part of the public deliverable ────────────────────────────
+CLAUDE.md
+_pdf_dump.txt
+Idea Submission Template _ Redrob.pdf
+
+# Committed on purpose (small, public sample data + the deliverable):
+#   showcase_candidates.jsonl, sample_candidates.json, submission.csv
