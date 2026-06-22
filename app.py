@@ -286,7 +286,20 @@ def source_bytes():
         return (HERE / "sample_candidates.json").read_bytes(), "sample"
     up = st.sidebar.file_uploader("Upload candidates", type=["jsonl", "json"], label_visibility="collapsed")
     if up is None:
-        st.sidebar.info("Upload up to ~100 candidate records (.jsonl or .json array).")
+        st.sidebar.caption("Up to ~100 records (.jsonl or .json array).")
+        st.markdown(
+            f"<div class='topbar'><div class='brand'><span class='brand-mark'>{ic('target',19)}</span>"
+            f"<span class='brand-name'>Redrob <span class='brand-dim'>· Candidate Intelligence</span></span></div>"
+            f"<span class='live'><span class='dot'></span>Live sandbox</span></div>", unsafe_allow_html=True)
+        st.markdown(
+            "<div class='card' style='padding:56px 32px;text-align:center;margin-top:18px'>"
+            f"<div style='display:inline-flex;width:50px;height:50px;border-radius:13px;background:var(--brand-soft);"
+            f"color:var(--brand-ink);align-items:center;justify-content:center'>{ic('search',24)}</div>"
+            "<div style='font-size:1.4rem;font-weight:700;color:var(--ink);margin-top:15px'>Rank a candidate file</div>"
+            "<div class='small' style='margin-top:9px;max-width:460px;margin-left:auto;margin-right:auto;line-height:1.6'>"
+            "Use the <b style='color:var(--ink)'>Upload</b> button on the left to add a <b style='color:var(--ink)'>.jsonl</b> "
+            "or <b style='color:var(--ink)'>.json</b> file (up to ~100 records), or pick a bundled sample to explore the "
+            "ranker instantly.</div></div>", unsafe_allow_html=True)
         st.stop()
     return up.getvalue(), "upload:" + up.name
 
